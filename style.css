@@ -1,0 +1,42 @@
+.display-inline p {
+    background-color: rgba(0, 128, 0, 0.649);
+    display: inline;
+    height: 40px;
+}
+
+.display-block p {
+    background-color: rgba(0, 128, 0, 0.649);
+    display: block;
+    height: 40px;
+}
+
+.display-inline-block p {
+    background-color: rgba(0, 128, 0, 0.649);
+    display: inline-block;
+    height: 40px;
+}
+/* Positioning*/
+.static{
+    background-color: #fea50063;
+    position: static;
+}
+.relative{
+    position: relative;
+    background-color: #fea50063;
+    top: 50px;
+}
+.absolute{
+    position: absolute;
+    background-color: #fea50063;
+    top: 50px;
+}
+.item{
+    background-color: #fea50063;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    gap: 10px;
+}

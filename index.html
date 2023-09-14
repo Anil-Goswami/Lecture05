@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .fixed-position {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border: 1px solid black;
+        }
+
+        .absolute-position {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            border: 1px solid black;
+        }
+
+        .relative-position {
+            position: relative;
+            left: 20px;
+            top: 10px;
+            border: 1px solid black;
+        }
+
+        .hidden-element {
+            display: none;
+        }
+
+        .inline-block-element {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        .inline-element {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+        }
+
+        .block-element {
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: lightblue;
+        }
+
+
+
+        .parent {
+            position: relative;
+        }
+
+        .child {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .child-1 {
+            background-color: lightblue;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .child-2 {
+            background-color: lightcoral;
+            left: 70px;
+            top: 10px;
+            z-index: 2;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="block-element">
+        This is a block-level element.
+    </div>
+    <span style="display: block;" class="inline-element">This is an inline element.</span>
+    <div class="inline-block-element">This is an inline-block element.</div>
+    <p class="hidden-element">This is a hidden element.</p>
+
+    <div class="relative-position">
+        <p>This is relatively positioned.</p>
+    </div>
+    <div class="absolute-position">
+        <p>This is absolutely positioned.</p>
+    </div>
+    <div class="fixed-position">
+        <p>This is fixed positioned.</p>
+    </div>
+    <div class="parent">
+        <div class="child child-1">Child 1</div>
+        <div class="child child-2">Child 2</div>
+    </div>
+</body>
+
+</html
